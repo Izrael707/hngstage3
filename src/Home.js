@@ -13,10 +13,10 @@ const Top = () => {
   return (
     <div className="row pt-3 pt-xl-5">
       <div className="col-12 col-xl-6 p-3 p-xl-5">
-        <div className="px-2 pt-4">
+        <div className="px-1 pt-4">
           <span className="display-4 fw-normal">Rent a <strong style={{ color: "purple" }}>Place</strong> away from <strong style={{ color: "purple" }}>Home</strong> in the <strong style={{ color: "purple" }}>Metaverse</strong></span>
         </div>
-        <div className="row px-2">
+        <div className="row px-1">
           <div className="py-3 py-xl-5">
             <span className="h4" style={{ lineHeight: "1.3" }}>we provide you access to luxury and affordable houses in the metaverse, get a chance to turn your imagination to reality at your comfort zone</span>
           </div>

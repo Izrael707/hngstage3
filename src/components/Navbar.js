@@ -37,17 +37,24 @@ const Navbar = () => {
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
                     <div class="modal-header px-4 py-3">
-                      <h1 class="modal-title fs-5 fw-semibold" id="MyModalLabel">Connect Wallet</h1>
+                      <h1 class="modal-title fs-4 fw-bold" id="MyModalLabel">Connect Wallet</h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body text-start px-4 py-3">
+                    <div class="modal-body text-start px-4 py-3 d-flex flex-column">
                       <label className="small">Choose your preferred wallet:</label>
-                      
+                      <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                        <button type="button" class="btn btn-lg btn-light text-start my-2">
+                          <img src="fox.png" alt="fox-icon" className="img-fluid pe-3" />
+                          <span className="fs-5 fw-bold">Metamask</span>
+                          <i class="bi bi-chevron-right float-end pt-1"></i>
+                        </button>
+                        <button type="button" class="btn btn-lg btn-light text-start my-2">
+                          <img src="WC.png" alt="fox-icon" className="img-fluid pe-3" />
+                          <span className="fs-5 fw-bold">WalletConnect</span>
+                          <i class="bi bi-chevron-right float-end pt-1"></i>
+                        </button>
+                      </div>
                     </div>
-                    {/* <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div> */}
                   </div>
                 </div>
               </div>
