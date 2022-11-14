@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-xl bg-white py-4">
-      <div className="container-fluid">
+      <div className="container-fluid px-2 px-xl-5">
         <Link className="navbar-brand" to="#">
           <img src="logo01.png" alt="icon" className="pe-2" />
           <img src="logo00.png" alt="icon-text" />
@@ -30,9 +30,27 @@ const Navbar = () => {
           </div>
           <div className="col-12 col-xl-3">
             <div className="text-center p-2">
-              <Link to="#" className="btn btn-lg px-3 text-white" id="connect-btn" style={{ background: "purple" }}>
-                <span className="h4">Connect Wallet</span>
-              </Link>
+              <button type="button" className="btn btn-lg px-3 text-white" id="connect-btn" style={{ background: "purple" }} data-bs-toggle="modal" data-bs-target="#modal-template">
+                Connect Wallet
+              </button>
+              <div class="modal fade" id="modal-template" tabindex="-1" aria-labelledby="MyModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header px-4 py-3">
+                      <h1 class="modal-title fs-5 fw-semibold" id="MyModalLabel">Connect Wallet</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-start px-4 py-3">
+                      <label className="small">Choose your preferred wallet:</label>
+                      
+                    </div>
+                    {/* <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div> */}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

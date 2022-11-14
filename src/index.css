@@ -10,3 +10,8 @@ body {
   color: purple !important;
   border: 1px solid purple !important;
 }
+
+.bi-star-fill {
+  color: purple !important;
+  margin-right: 10px !important;
+}
