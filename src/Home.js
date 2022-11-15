@@ -1,4 +1,5 @@
 import Card from "./components/Card";
+import { cardData } from "./DummyData";
 
 const Home = () => {
   return (
@@ -69,56 +70,12 @@ const Middle = () => {
   );
 }
 
-// dummy data
-const cardData = [
-  {
-    title: "poppins",
-    text: "loyalty",
-    logo: "nft01.png"
-  },
-  {
-    title: "ragae",
-    text: "loyalty",
-    logo: "nft02.png"
-  },
-  {
-    title: "views",
-    text: "loyalty",
-    logo: "nft01.png"
-  },
-  {
-    title: "astro",
-    text: "loyalty",
-    logo: "nft02.png"
-  },
-  {
-    title: "johnny",
-    text: "loyalty",
-    logo: "nft03.png"
-  },
-  {
-    title: "baking",
-    text: "loyalty",
-    logo: "nft02.png"
-  },
-  {
-    title: "soda",
-    text: "loyalty",
-    logo: "nft01.png"
-  },
-  {
-    title: "illumi",
-    text: "loyalty",
-    logo: "nft03.png"
-  }
-]
-
 const CardList = () => {
   return (
-    <div class="row px-4 py-2 px-xl-5">
+    <div class="row px-2 py-5 px-lg-4">
       {cardData.map((info, id) => (
-        <div class="col-12 col-md-6 col-xl-3 p-2" key={id}>
-          <Card title={info.title} text={info.text} logo={info.logo} />
+        <div className="col-12 col-md-6 col-lg-3" key={id}>
+          <Card title={info.title} price={info.price} distance={info.distance} time={info.time} logo={info.logo} />
         </div>
       ))}
     </div>
