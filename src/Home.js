@@ -116,8 +116,8 @@ const cardData = [
 const CardList = () => {
   return (
     <div class="row px-4 py-2 px-xl-5">
-      {cardData.map((info, key) => (
-        <div class="col-12 col-md-6 col-xl-3 p-2">
+      {cardData.map((info, id) => (
+        <div class="col-12 col-md-6 col-xl-3 p-2" key={id}>
           <Card title={info.title} text={info.text} logo={info.logo} />
         </div>
       ))}

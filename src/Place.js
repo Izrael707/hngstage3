@@ -88,8 +88,8 @@ const cardData = [
 const CardList = () => {
   return (
     <div class="row px-3 py-5 px-lg-4">
-      {cardData.map((info, key) => (
-        <div class="col-12 col-md-6 col-xl-3 p-2">
+      {cardData.map((info, id) => (
+        <div class="col-12 col-md-6 col-xl-3 p-2" key={id}>
           <Card title={info.title} text={info.text} logo={info.logo} />
         </div>
       ))}
