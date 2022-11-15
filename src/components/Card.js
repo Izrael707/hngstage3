@@ -1,6 +1,6 @@
 const Card = ({ title, price, distance, time, logo }) => {
   return (
-    <div className="border rounded border-2 p-2">
+    <div className="border rounded rounded-4 border-2 p-2">
       <div>
         <img src={logo} alt="NFTs" className="card-img" />
       </div>
