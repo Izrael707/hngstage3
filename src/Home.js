@@ -1,3 +1,5 @@
+import Card from "./components/Card";
+
 const Home = () => {
   return (
     <div className="container-fluid p-0">
@@ -13,16 +15,16 @@ const Top = () => {
   return (
     <div className="row pt-3 pt-xl-5">
       <div className="col-12 col-xl-6 p-3 p-xl-5">
-        <div className="px-1 pt-4">
-          <span className="display-4 fw-normal">Rent a <strong style={{ color: "purple" }}>Place</strong> away from <strong style={{ color: "purple" }}>Home</strong> in the <strong style={{ color: "purple" }}>Metaverse</strong></span>
+        <div className="px-2 pt-5">
+          <span className="display-5 fw-normal">Rent a <strong style={{ color: "#A02279" }}>Place</strong> away from <strong style={{ color: "#A02279" }}>Home</strong> in the <strong style={{ color: "#A02279" }}>Metaverse</strong></span>
         </div>
-        <div className="row px-1">
+        <div className="row px-2">
           <div className="py-3 py-xl-5">
             <span className="h4" style={{ lineHeight: "1.3" }}>we provide you access to luxury and affordable houses in the metaverse, get a chance to turn your imagination to reality at your comfort zone</span>
           </div>
           <div className="d-flex">
             <input class="form-control p-2 p-xl-3" type="search" placeholder="Search for location" aria-label="Search" />
-            <button class="btn border-start-0 rounded-end rounded-2 px-5" style={{ background: "purple" }} type="submit">
+            <button class="btn border-start-0 rounded-end rounded-2 px-5" style={{ background: "#A02279" }} type="submit">
               <span className="text-white h5">Search</span>
             </button>
           </div>
@@ -47,7 +49,7 @@ const Top = () => {
 const Middle = () => {
   return (
     <div className="container-fluid p-0">
-      <div style={{ background: "purple" }}>
+      <div style={{ background: "#A02279" }} className="mt-3">
         <div className="row">
           <div className="col-md-4 p-1 text-center">
             <img src="mbtoken.png" alt="" className="img-fluid" />
@@ -62,33 +64,6 @@ const Middle = () => {
       </div>
       <div className="pt-5">
         <div className="h2 fw-semibold text-center">Inspiration for your next adventure</div>
-      </div>
-    </div>
-  );
-}
-
-const Card = ({ title, text, logo }) => {
-  return (
-    <div class="card p-3">
-      <img src={logo} class="card-img-top" alt="nfts" />
-      <div class="card-body">
-        <div class="card-title d-flex justify-content-between">
-          <span className="fs-6">{title}</span>
-          <span className="fs-6 fw-semibold">{title}</span>
-        </div>
-        <div class="card-text d-flex justify-content-between">
-          <span className="fs-6 text-break">{text}</span>
-          <span className="fs-6 text-break">{text}</span>
-        </div>
-        <div>
-          <div className="ratings">
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-          </div>
-        </div>
       </div>
     </div>
   );
@@ -152,7 +127,7 @@ const CardList = () => {
 
 const Banner = () => {
   return (
-    <div className="row p-5 mt-5" style={{ background: "purple" }}>
+    <div className="row p-5 mt-5" style={{ background: "#A02279" }}>
       <div className="col-12 col-xl-6 p-5">
         <div className="display-6 fw-bold text-white py-4 pt-lg-5">
           Metabnb NFTs
@@ -161,7 +136,7 @@ const Banner = () => {
           Discover our NFT gift cards collection. Loyal customers get amazing gift cards which are tarded as NFTs. These NFTs gives our customer access to loads of our exclusive services.
         </div>
         <div className="py-5">
-          <button className="btn btn-light btn-lg px-5" style={{ color: "purple" }}>Learn more</button>
+          <button className="btn btn-light btn-lg px-5" style={{ color: "#A02279" }}>Learn more</button>
         </div>
       </div>
       <div className="col-12 col-xl-6 py-3 py-xl-5">
