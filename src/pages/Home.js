@@ -1,5 +1,5 @@
-import Card from "./components/Card";
-import { cardData1 } from "./DummyData";
+import Card from "../components/Card";
+import { cardData1 } from "../DummyData";
 
 const Home = () => {
   return (

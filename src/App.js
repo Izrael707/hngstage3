@@ -1,8 +1,8 @@
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Home";
+import Home from "./pages/Home";
 import Footer from "./components/Footer";
-import Place from "./Place";
+import Place from "./pages/Place";
 
 const App = () => {
   return (

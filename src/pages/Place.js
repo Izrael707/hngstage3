@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Card from "./components/Card";
-import { cardData2 } from "./DummyData";
+import Card from "../components/Card";
+import { cardData2 } from "../DummyData";
 
 const Place = () => {
   return (
